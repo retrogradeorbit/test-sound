@@ -4,6 +4,7 @@ demonstrate a google closure compiler problem when calling decodeAudioData on an
 
 # replicate
 
+```
 $ lein cljsbuild once
 $ tail -10 out-adv/test_sound.min.js
 
@@ -17,7 +18,7 @@ yc.prototype.Ra = function(a, b) {
 });
 
 })();
-
+```
 
 notice the .Eb(...) call. This should be .decodeAudio(...)
 
